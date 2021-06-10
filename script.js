@@ -14,11 +14,11 @@ function workschool () {
   // the first example checks if the users is a student and it's a weekday
   if ((age < 18) && (day === 'Monday' || day === 'Tuesday' || day === 'Wednesday' || day === 'Thursday' || day === 'Friday')) {
     document.getElementById('answer').innerHTML = 'Time for school'
-    } else if ((age < 18 ) && (day === 'Saturday' || day === 'Sunday')) {
+  } else if ((age < 18) && (day === 'Saturday' || day === 'Sunday')) {
     document.getElementById('answer').innerHTML = 'Time to relax for the weekend'
-    } else if ((age >= 18) && (day !== 'Saturday' && day !== 'Sunday')) {
+  } else if ((age >= 18) && (day !== 'Saturday' && day !== 'Sunday')) {
     document.getElementById('answer').innerHTML = 'Time for work'
-    } else if ((age >= 18) && (day === 'Saturday' || day === 'Sunday')) {
+  } else if ((age >= 18) && (day === 'Saturday' || day === 'Sunday')) {
     document.getElementById('answer').innerHTML = 'Time to relax for the weekend'
   }
 }
